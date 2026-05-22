@@ -22,42 +22,40 @@ import { motion } from "framer-motion";
 function App() {
   const skills = {
     backend: [
+      "Node.js",
+      "TypeScript",
       "C#",
-      ".NET 6/8",
-      "ASP.NET Core",
-      "Entity Framework",
-      "APIs RESTful",
+      ".NET Core",
+      "PostgreSQL",
       "SQL Server",
-      "Arquitectura Limpia",
+      "MongoDB",
+      "Git",
     ],
-    frontend: ["JavaScript (ES6+)", "React.js", "HTML5", "CSS3", "Bootstrap 5", "Vite"],
+    frontend: ["React", "JavaScript", "HTML", "CSS"],
     tools: ["Git", "GitHub", "Postman", "Visual Studio", "VS Code"],
   };
 
   const projects = [
     {
-      title: "Sistema de Gestión Empresarial (Backend)",
-      stack: "C#, .NET 6, EF Core, SQL Server",
-      description:
-        "Desarrollo robusto bajo arquitectura en 3 capas (Datos, Negocio, Presentación). Incluye autenticación, validaciones complejas y manejo de transacciones SQL.",
+      title: "Project Hub",
+      stack: "React + Node.js/Express + MongoDB · Full Stack",
+      description: "App full stack con CRUD, autenticación JWT, verificación por email y arquitectura en capas.",
       icon: <Database className="w-6 h-6" />,
-      link: "https://github.com/natadeveloper20/backend-crud-3-layers",
+      link: "https://trabajo-final-frontend-ten.vercel.app",
     },
     {
-      title: "Panel de Administración de Usuarios",
-      stack: "C#, .NET Core, SQL Server, Bootstrap",
-      description:
-        "Portal administrativo para control de usuarios con roles, perfiles y auditoría. Implementado con Entity Framework y migraciones dinámicas.",
+      title: "Clon de WhatsApp Web",
+      stack: "React + React Router + Context API · Frontend",
+      description: "Simulación de WhatsApp Web con chat, contactos, búsqueda y modo oscuro. Diseño responsivo.",
       icon: <User className="w-6 h-6" />,
-      link: "https://github.com/natadeveloper20/user-management-net",
+      link: "https://github.com/natadeveloper20/clone-whatsapp-tp-final",
     },
     {
-      title: "Portfolio Interactivo de Alto Rendimiento",
-      stack: "React, Framer Motion, CSS Moderno",
-      description:
-        "Esta misma web: una SPA (Single Page Application) optimizada para SEO, con animaciones fluidas, scroll inteligente y diseño totalmente responsivo.",
+      title: "Portfolio Personal",
+      stack: "React 19 + Vite + Framer Motion · Frontend",
+      description: "SPA con animaciones fluidas, modo oscuro y diseño responsivo construida desde cero.",
       icon: <Layout className="w-6 h-6" />,
-      link: "#",
+      link: "https://github.com/natadeveloper20/Nata-Mendieta-Portfolio",
     },
   ];
 
@@ -69,10 +67,10 @@ function App() {
       description: "Profundizando en fundamentos teóricos, algoritmos, estructuras de datos y gestión de proyectos de software.",
     },
     {
-      title: "Programación Full Stack",
-      institution: "Bootcamp / Institución de Tecnología",
-      period: "2023 - 2024",
-      description: "Especialización en desarrollo de aplicaciones escalables con enfoque en el ecosistema Microsoft .NET.",
+      title: "Programación Full Stack UTN BA Diplomatura",
+      institution: "Universidad Tecnológica Nacional (UTN BA)",
+      period: "2025 - 2026",
+      description: "Diplomatura completada y proyecto final terminado. Especialización en desarrollo de aplicaciones escalables con enfoque en el ecosistema Microsoft .NET.",
     },
   ];
 
@@ -114,7 +112,7 @@ function App() {
             Natanael <span className="gradient-text">Mendieta</span>
           </h1>
           <p className="hero-subtitle centered">
-            <span className="text-accent">Fullstack Developer Jr.</span> especializado en el ecosistema <span className="text-highlight">.NET</span> & <span className="text-highlight">React</span>
+            <span className="text-accent">Desarrollador Backend (Pasante)</span> · <span className="text-highlight">Fullstack</span>
           </p>
           <div className="hero-actions">
             <div className="btn-group">
@@ -160,18 +158,10 @@ function App() {
           </div>
           <div className="about-content">
             <p>
-              ¡Hola! Soy <strong>Natanael</strong>, un desarrollador que no solo escribe código, sino que <strong>construye soluciones</strong>. 
-              Mi especialidad es el backend con <strong>.NET y C#</strong>, donde me siento cómodo diseñando arquitecturas robustas, 
-              pero mi curiosidad me llevó a dominar también <strong>React</strong> para tener una visión completa del producto.
+              Desarrollador <strong>backend Jr.</strong> y estudiante avanzado de Sistemas (UNGS), con experiencia en <strong>.NET, Node.js</strong> y APIs REST. Capacidad para participar en proyectos fullstack gracias a conocimientos en frontend.
             </p>
             <p>
-              Empecé mi camino en la <strong>Licenciatura en Sistemas en 2020</strong>, y desde entonces no he parado de aprender. 
-              Me motiva el desafío de transformar problemas complejos en sistemas simples y eficientes. 
-              Soy proactivo, detallista y siempre busco el "porqué" de las cosas, no solo el "cómo".
-            </p>
-            <p>
-              Actualmente busco un equipo donde pueda aportar mi energía, seguir creciendo profesionalmente y, sobre todo, 
-              crear software del que pueda sentirme orgulloso.
+              Actualmente pasante backend, enfocado en <strong>soluciones escalables</strong> y trabajo en equipo. Busco integrarme a equipos ágiles donde aportar soluciones innovadoras y seguir creciendo profesionalmente.
             </p>
             <div className="quick-info spaced">
               <div className="info-item">
@@ -180,7 +170,7 @@ function App() {
               </div>
               <div className="info-item">
                 <Briefcase size={22} className="text-accent" />
-                <span>Freelance / En búsqueda activa</span>
+                <span>Truckers Talent Inc / Remoto</span>
               </div>
             </div>
           </div>
@@ -254,14 +244,28 @@ function App() {
             </div>
             <div className="timeline-item">
               <div className="timeline-header">
-                <h3>Desarrollador Freelance Full Stack</h3>
-                <span className="timeline-date">2022 – Actualidad</span>
+                <h3>Desarrollador Backend (Pasante)</h3>
+                <span className="timeline-date">Mar 2026 – Actualidad</span>
               </div>
               <ul className="timeline-list">
-                <li>Diseño e implementación de interfaces responsivas y accesibles.</li>
-                <li>Mantenimiento de bases de datos SQL Server y optimización de consultas.</li>
-                <li>Colaboración en proyectos .NET aplicando Clean Architecture.</li>
-                <li>Control de versiones riguroso con Git/GitHub.</li>
+                <li><strong>Truckers Talent Inc — Remoto</strong></li>
+                <li>Desarrollo y mantenimiento de APIs REST con Node.js y TypeScript.</li>
+                <li>Implementación de módulos críticos: gestión de usuarios, logs de actividad y documentos.</li>
+                <li>Integración con bases de datos PostgreSQL, optimizando consultas y asegurando integridad de datos.</li>
+                <li>Trabajo colaborativo con Git (branches, pull requests y code reviews).</li>
+              </ul>
+            </div>
+            
+            <div className="timeline-item">
+              <div className="timeline-header">
+                <h3>Desarrollador Web Freelance</h3>
+                <span className="timeline-date">2022 – 2023</span>
+              </div>
+              <ul className="timeline-list">
+                <li><strong>Proyectos independientes — Remoto</strong></li>
+                <li>Desarrollo de aplicaciones web utilizando C#, .NET y JavaScript.</li>
+                <li>Implementación de CRUDs con Entity Framework y SQL Server.</li>
+                <li>Corrección de errores y mejoras funcionales según requerimientos del cliente.</li>
               </ul>
             </div>
           </motion.div>

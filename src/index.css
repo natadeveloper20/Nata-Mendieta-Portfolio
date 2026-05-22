@@ -92,7 +92,7 @@ section {
 
 /* Navbar */
 .nav {
-  position: fixed;
+  position: absolute;
   top: 24px;
   left: 50%;
   transform: translateX(-50%);
