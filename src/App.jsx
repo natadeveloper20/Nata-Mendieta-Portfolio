@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Terminal,
   Code2,
@@ -20,6 +20,21 @@ import {
 import { motion } from "framer-motion";
 
 function App() {
+  const [typedText, setTypedText] = useState("");
+  const fullText = "Desarrollador Full Stack";
+  
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setTypedText(fullText.slice(0, i + 1));
+      i++;
+      if (i >= fullText.length) {
+        clearInterval(interval);
+      }
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
+
   const skills = {
     backend: [
       "Node.js",
@@ -102,22 +117,64 @@ function App() {
           className="hero-container"
         >
           <motion.span 
-            className="badge"
+            className="badge terminal-badge"
             animate={{ boxShadow: ["0 0 0px var(--accent-glow)", "0 0 15px var(--accent-glow)", "0 0 0px var(--accent-glow)"] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            <Sparkles size={14} style={{ marginRight: '5px' }} /> Disponible para nuevos desafíos
+            <Terminal size={14} style={{ marginRight: '5px' }} /> Disponible para nuevos desafíos
           </motion.span>
           <h1>
             Natanael <span className="gradient-text">Mendieta</span>
           </h1>
-          <p className="hero-subtitle centered">
-            <span className="text-accent">Desarrollador Backend</span> · <span className="text-highlight">Fullstack</span>
+          <p className="hero-subtitle centered" style={{ minHeight: '40px', fontFamily: 'monospace', fontSize: '1.5rem' }}>
+            <span className="text-accent">&gt; {typedText}</span><motion.span animate={{ opacity: [0, 1, 0] }} transition={{ repeat: Infinity, duration: 0.8 }}>_</motion.span>
           </p>
+          
+          {/* Floating IT Icons */}
+          <motion.div 
+            animate={{ y: [0, -30, 0], rotate: [0, 5, -5, 0], opacity: [0.1, 0.4, 0.1] }} 
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            style={{ position: 'absolute', top: '15%', left: '10%', zIndex: -1 }}
+            className="hide-mobile"
+          >
+            <Code2 size={80} color="var(--accent)" />
+          </motion.div>
+          <motion.div 
+            animate={{ y: [0, 40, 0], rotate: [0, -10, 10, 0], opacity: [0.1, 0.3, 0.1] }} 
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            style={{ position: 'absolute', top: '50%', right: '10%', zIndex: -1 }}
+            className="hide-mobile"
+          >
+            <Database size={100} color="var(--accent-secondary)" />
+          </motion.div>
+          <motion.div 
+            animate={{ y: [0, -20, 0], opacity: [0.1, 0.5, 0.1] }} 
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+            style={{ position: 'absolute', bottom: '20%', left: '25%', zIndex: -1 }}
+            className="hide-mobile"
+          >
+            <Cpu size={60} color="#818cf8" />
+          </motion.div>
+          <motion.div 
+            animate={{ y: [0, -30, 0], rotate: [0, 15, -15, 0], opacity: [0.2, 0.6, 0.2] }} 
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            style={{ position: 'absolute', top: '25%', right: '25%', zIndex: -1, fontSize: '3rem' }}
+            className="hide-mobile"
+          >
+            ☕
+          </motion.div>
+          <motion.div 
+            animate={{ y: [0, 20, 0], x: [0, 30, 0], rotate: [0, -20, 20, 0], opacity: [0.2, 0.8, 0.2] }} 
+            transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 3 }}
+            style={{ position: 'absolute', bottom: '30%', right: '15%', zIndex: -1, fontSize: '4rem' }}
+            className="hide-mobile"
+          >
+            🐱
+          </motion.div>
           <div className="hero-actions">
             <div className="btn-group">
-              <a href="#contact" className="btn">
-                Hablemos
+              <a href="mailto:mendietanatanael9@gmail.com" className="btn">
+                <Mail size={18} /> Email
               </a>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
                 <Phone size={18} /> WhatsApp
