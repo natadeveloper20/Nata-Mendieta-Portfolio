@@ -62,15 +62,15 @@ function App() {
   const education = [
     {
       title: "Licenciatura en Sistemas",
-      institution: "Universidad (En curso)",
-      period: "2020 - Actualidad",
-      description: "Profundizando en fundamentos teóricos, algoritmos, estructuras de datos y gestión de proyectos de software.",
+      institution: "UNGS",
+      period: "Mar 2020 - Actualidad",
+      description: "Estudiante avanzado en la Universidad Nacional de General Sarmiento (UNGS). Profundizando en fundamentos teóricos, algoritmos, estructuras de datos y gestión de proyectos de software.",
     },
     {
-      title: "Programación Full Stack UTN BA Diplomatura",
-      institution: "Universidad Tecnológica Nacional (UTN BA)",
-      period: "2025 - 2026",
-      description: "Diplomatura completada y proyecto final terminado. Especialización en desarrollo de aplicaciones escalables con enfoque en el ecosistema Microsoft .NET.",
+      title: "Diplomatura Programación Web Full Stack",
+      institution: "UTN BA",
+      period: "Sep 2025 - May 2026",
+      description: "Universidad Tecnológica Nacional (UTN BA). Especialización en desarrollo de aplicaciones escalables con enfoque en el ecosistema Microsoft .NET y tecnologías frontend modernas.",
     },
   ];
 
@@ -112,7 +112,7 @@ function App() {
             Natanael <span className="gradient-text">Mendieta</span>
           </h1>
           <p className="hero-subtitle centered">
-            <span className="text-accent">Desarrollador Backend (Pasante)</span> · <span className="text-highlight">Fullstack</span>
+            <span className="text-accent">Desarrollador Backend</span> · <span className="text-highlight">Fullstack</span>
           </p>
           <div className="hero-actions">
             <div className="btn-group">
@@ -158,10 +158,10 @@ function App() {
           </div>
           <div className="about-content">
             <p>
-              Desarrollador <strong>backend Jr.</strong> y estudiante avanzado de Sistemas (UNGS), con experiencia en <strong>.NET, Node.js</strong> y APIs REST. Capacidad para participar en proyectos fullstack gracias a conocimientos en frontend.
+              Desarrollador <strong>Full Stack</strong> y estudiante avanzado de Sistemas (UNGS), con experiencia en <strong>.NET, Node.js, C#, ASP.NET, SQL Server y PostgreSQL</strong>. Orientado a la resolución de problemas y el desarrollo de soluciones eficientes.
             </p>
             <p>
-              Actualmente pasante backend, enfocado en <strong>soluciones escalables</strong> y trabajo en equipo. Busco integrarme a equipos ágiles donde aportar soluciones innovadoras y seguir creciendo profesionalmente.
+              Actualmente orientado al desarrollo full stack, enfocado en <strong>soluciones escalables</strong> y trabajo en equipo. Busco integrarme a equipos ágiles donde aportar soluciones innovadoras y seguir creciendo profesionalmente.
             </p>
             <div className="quick-info spaced">
               <div className="info-item">
@@ -244,28 +244,29 @@ function App() {
             </div>
             <div className="timeline-item">
               <div className="timeline-header">
-                <h3>Desarrollador Backend (Pasante)</h3>
-                <span className="timeline-date">Mar 2026 – Actualidad</span>
+                <h3>Desarrollador Full Stack</h3>
+                <span className="timeline-date">Mar 2025 – Actualidad</span>
               </div>
               <ul className="timeline-list">
                 <li><strong>Truckers Talent Inc — Remoto</strong></li>
-                <li>Desarrollo y mantenimiento de APIs REST con Node.js y TypeScript.</li>
-                <li>Implementación de módulos críticos: gestión de usuarios, logs de actividad y documentos.</li>
-                <li>Integración con bases de datos PostgreSQL, optimizando consultas y asegurando integridad de datos.</li>
-                <li>Trabajo colaborativo con Git (branches, pull requests y code reviews).</li>
+                <li>Desarrollo de funcionalidades Backend y APIs para gestión de usuarios y documentos.</li>
+                <li>Diseño y mantenimiento de estructuras de datos utilizando PostgreSQL y migraciones con TypeORM.</li>
+                <li>Desarrollo de funcionalidades en tiempo real mediante Socket.IO.</li>
+                <li>Coordinación de tareas, revisión de código y documentación utilizando Git.</li>
               </ul>
             </div>
             
             <div className="timeline-item">
               <div className="timeline-header">
-                <h3>Desarrollador Web Freelance</h3>
-                <span className="timeline-date">2022 – 2023</span>
+                <h3>Desarrollador Backend</h3>
+                <span className="timeline-date">2024 – 2025</span>
               </div>
               <ul className="timeline-list">
-                <li><strong>Proyectos independientes — Remoto</strong></li>
-                <li>Desarrollo de aplicaciones web utilizando C#, .NET y JavaScript.</li>
-                <li>Implementación de CRUDs con Entity Framework y SQL Server.</li>
-                <li>Corrección de errores y mejoras funcionales según requerimientos del cliente.</li>
+                <li><strong>Sancor Seguros — Remoto</strong></li>
+                <li>Trabajo sobre aplicaciones ASP.NET y .NET Framework, e iniciativas recientes con .NET 6.</li>
+                <li>Participación en tareas frontend utilizando Knockout.js y Vue.js según la arquitectura.</li>
+                <li>Implementación y optimización de consultas SQL y Stored Procedures sobre SQL Server.</li>
+                <li>Gestión de versiones con GitLab y trabajo bajo metodología ágil híbrida.</li>
               </ul>
             </div>
           </motion.div>
