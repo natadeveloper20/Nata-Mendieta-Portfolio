@@ -41,7 +41,7 @@ Si deseas correr este proyecto en tu entorno local, sigue estos pasos:
    ```
 
 5. **Abrir en el navegador**
-   Ve a `http://localhost:5173` para ver la aplicación corriendo.
+   Ve a `https://natanael-mendieta.netlify.app/` para ver la aplicación corriendo.
 
 ## 📬 Contacto
 
